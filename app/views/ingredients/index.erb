@@ -1,0 +1,7 @@
+<h1>All Ingredients</h1>
+
+<ul>
+<% @ingredients.each do |ingr| %>
+    <li><%= ingr.name %> (<%= ingr.users.count%>)</li>
+<% end %>
+</ul>
